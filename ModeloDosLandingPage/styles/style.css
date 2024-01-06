@@ -1,0 +1,985 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Title-color: #ffffff;
+    --Text-color: #ffffff;
+    --box-shadow-color: #fff;
+    --background-Header: rgba(255, 255, 255, 0.171);
+
+}
+
+/**CHAT WHATSAPP*/
+.chat__Whats__App {
+    width: 15%;
+    height: auto;
+    bottom: 20px;
+    right: 10px;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.chat__Whats__App a img {
+    height: 40px;
+}
+
+/**TITULOS*/
+h1,
+h2,
+h3,
+h4 {
+    color: var(--Title-color);
+}
+
+body {
+
+    font-family: 'Roboto Slab', serif;
+    background-color: #121212;
+
+}
+
+.servicios__hr {
+
+    width: 80%;
+    height: 1px;
+    border: 2px solid rgb(192, 148, 144);
+}
+
+.conteiner__general {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    box-shadow: 2px 2px 7px white;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+
+}
+
+/**LOGO MENU*/
+.conteiner__logo {
+    width: 20%;
+    height: 70px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.conteiner__logo img {
+    height: 60px;
+}
+
+/**MENU*/
+.navBar {
+    width: 60%;
+    height: auto;
+    margin-left: 20px;
+    margin: 0 auto;
+}
+
+.navBar ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.navBar li a {
+    color: var(--Title-color);
+    font-size: 1.5em;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.navBar li a:hover {
+    color: #96605f;
+}
+
+/**SCROLL*/
+.conteiner__Scroll_up a {
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    bottom: 80px;
+    position: fixed;
+    background-color: rgba(165, 42, 42, 0.573);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.conteiner__Scroll_up img {
+    width: 95%;
+    height: auto;
+
+}
+
+
+/**FORMULARIO CONTACTO*/
+.conteiner__Contacto {
+    width: 100%;
+    height: 850px;
+    padding: 0 50px 0 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-image: url(../image/portada1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.conteiner__info__contacto {
+    width: 80%;
+    height: 90%;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner__info__contacto h1 {
+    font-size: 8rem;
+    color: #fff;
+}
+
+.conteiner__Contacto form {
+    width: 20%;
+    height: 500px;
+    background-color: #171717ab;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteiner__Contacto form h3 {
+    color: var(--Text-color);
+}
+
+.conteiner__Contacto form input,
+.conteiner__Contacto form textarea {
+    width: 80%;
+    height: 40px;
+    text-align: center;
+    border: 2px solid brown;
+    border-radius: 5px;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner__Contacto form button {
+    width: 60%;
+    height: 40px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid brown;
+    border-radius: 5px;
+}
+
+.conteiner__Contacto form button:hover {
+    cursor: pointer;
+    background-color: rgb(136, 109, 109);
+}
+
+/**BANNERS UNO*/
+.conteiner__servicioUno {
+    width: 100%;
+    height: auto;
+    background-color: #121212;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner__Banner__Uno {
+    width: 70%;
+    height: 500px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.conteiner_Image_Banner_Uno {
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner_Image_Banner_Uno img {
+    width: 100%;
+    border: 8px solid rgb(99, 65, 65);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.conteiner__Ifo_Banner__Uno {
+    width: 50%;
+    height: 500px;
+    padding: 5%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/**BANNERS DOS*/
+.conteiner__servicioDos {
+    width: 100%;
+    height: auto;
+    background-color: #121212;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner__Banner__Dos {
+    width: 70%;
+    height: 500px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.conteiner_Image_Banner_Dos {
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.conteiner_Image_Banner_Dos img {
+    width: 100%;
+    border: 8px solid rgb(99, 65, 65);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.conteiner__Ifo_Banner__Dos {
+    width: 50%;
+    height: 500px;
+    padding: 4%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner__Banner__Dos hr,
+.conteiner__Banner__Uno hr {
+    width: 70%;
+    margin-bottom: 3%;
+}
+
+.conteiner__Banner__Dos h2,
+.conteiner__Banner__Uno h2 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.conteiner__Banner__Dos p,
+.conteiner__Banner__Uno p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.btn__banner {
+
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+    border: 2px solid brown;
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.btn__banner:hover {
+    border: none;
+    background-color: rgb(79, 48, 48);
+    box-shadow: 2px 2px 7px rgb(235, 161, 161);
+}
+
+/**NUESTRA EMPRESA*/
+.conteiner__Nosotros {
+    width: 100%;
+    height: 900px;
+    background-image: url(../image/empresa.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: end;
+}
+
+.conteiner__Info__Nosotros {
+    width: 30%;
+    height: 900px;
+    text-align: center;
+    border-left: 6px solid brown;
+    background-color: #000000c1;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteiner__Info__Nosotros h2 {
+    font-size: 4rem;
+    color: white;
+    margin: 30px 0;
+    font-weight: 700;
+}
+
+.conteiner__Info__Nosotros p {
+    font-size: 1.5rem;
+    color: white;
+    margin: 30px 0;
+    padding: 15px;
+    text-align: justify;
+}
+
+/**CONTEINER PRODUCTOS*/
+.conteiner__Productos {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.conteiner__Productos h2 {
+    margin: 15px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.conteiner__Productos h3,
+.conteiner__Productos p {
+    text-align: center;
+    width: 100%;
+    color: white;
+    margin: 15px 0;
+}
+
+.conteiner__Cards__Producto {
+    width: 20%;
+    max-height: 300px;
+    border-radius: 10px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.conteiner__Img__Cards {
+    max-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.conteiner__Img__Cards img {
+    width: 100%;
+    max-height: 200px;
+    border-radius: 100px;
+    border: 4px solid brown;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner__Img__Cards img:hover {
+    cursor: pointer;
+    border: 4px solid rgb(170, 112, 112);
+}
+
+.conteiner__Info__Cards {
+    width: 90%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/**CONTENEDOR SUBSCRIPCION*/
+.conteiner__Subscripcion {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    background-color: rgb(176, 31, 31);
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteiner__Subscripcion h2 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 30px 0;
+}
+
+.conteiner__Subscripcion form {
+    width: 70%;
+    height: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.conteiner__Subscripcion form input,
+.conteiner__Subscripcion form button {
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    font-size: 25px;
+    margin-right: 5px;
+    border: 2px solid rgb(151, 117, 117);
+    border-radius: 5px;
+
+}
+
+.conteiner__Subscripcion form button {
+    width: 25%;
+    height: 100%;
+    font-size: 30px;
+    color: white;
+    border: 2px solid rgb(151, 117, 117);
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.conteiner__Subscripcion form button:hover {
+    cursor: pointer;
+    background-color: rgb(171, 110, 110);
+    box-shadow: 2px 2px 7px rgb(209, 168, 168);
+}
+
+/**FOOTER*/
+footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner_Redes {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner_Redes img {
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+}
+
+footer hr {
+    width: 70%;
+    height: 1px;
+    border: 3px solid rgb(189, 106, 106);
+    margin: 10px 0;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    margin: 15px;
+}
+
+footer h3 {
+    margin: 15px 0;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.openMenu {
+    opacity: 1 !important;
+
+}
+
+@media (max-width: 1440px) {
+    .conteiner__Banner__Uno {
+        width: 80%;
+    }
+
+    .conteiner__Banner__Dos {
+        width: 80%;
+    }
+
+    .conteiner__Info__Nosotros h2 {
+        font-size: 3rem;
+    }
+
+    .conteiner__Info__Nosotros p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 1024px) {
+
+
+    /**CONTACTO*/
+    .conteiner__info__contacto h1 {
+        font-size: 5rem;
+    }
+
+    .conteiner__info__contacto {
+        width: 70%;
+        font-size: 1.2rem;
+    }
+
+    .conteiner__Contacto form {
+        width: 30%;
+    }
+
+    /**BANNERS*/
+    .conteiner__Banner__Uno {
+        width: 80%;
+    }
+
+    .conteiner__Banner__Dos h2,
+    .conteiner__Banner__Uno h2 {
+        font-size: 2.5rem;
+        color: white;
+        margin-bottom: 15px;
+    }
+
+    .conteiner__Banner__Dos p,
+    .conteiner__Banner__Uno p {
+        text-align: center;
+        font-size: 1.1rem;
+        color: white;
+        margin-bottom: 15px;
+    }
+
+    /**NUESTRA EMPRESA*/
+    .conteiner__Info__Nosotros h2 {
+        font-size: 2.5rem;
+    }
+
+    .conteiner__Info__Nosotros p {
+        font-size: 1rem;
+    }
+
+    .conteiner__Nosotros {
+        background-size: 140%;
+    }
+}
+
+@media (max-width: 768px) {
+    .conteiner__logo {
+        width: 45%;
+        height: auto;
+        justify-content: start;
+    }
+
+    /**MENU*/
+    header {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navBar {
+        width: 100%;
+        height: auto;
+        padding: 50px 0;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.64);
+        opacity: 0;
+    }
+
+    .navBar ul {
+        margin: 0 0 20px 20px;
+        list-style: none;
+        display: flex;
+        flex-flow: column wrap;
+        gap: 20px;
+        justify-content: center;
+        align-items: start;
+
+    }
+
+    .navBar li a {
+
+        color: var(--Title-color);
+        font-size: 1.5em;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    /**MENU HAMBURGUESA*/
+    .toogle__nav {
+        cursor: pointer;
+        width: 45%;
+        height: 50px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: end;
+    }
+
+    .toogle__nav span {
+        display: block;
+        width: 40px;
+        height: 4px;
+        margin-bottom: 8px;
+        border-radius: 8px;
+        background-color: #fff;
+        top: 0;
+        position: relative;
+        transition: all .3s ease-in-out;
+    }
+
+    .toogle__nav.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .toogle__nav.open span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 12px;
+        background-color: red;
+    }
+
+    .toogle__nav.open span:nth-child(3) {
+        transform: rotate(-45deg);
+        top: -12px;
+        background-color: red;
+    }
+
+    /**CONTACTO*/
+    .conteiner__Contacto {
+    background-size: 170%;
+    }
+    .conteiner__info__contacto h1 {
+        font-size: 3rem;
+    }
+
+    .conteiner__info__contacto {
+        width: 60%;
+        font-size: 1rem;
+    }
+
+    .conteiner__Contacto form {
+        width: 40%;
+    }
+
+    /**BANNERS UNO*/
+    .conteiner__servicioUno {
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .conteiner__Banner__Uno {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-flow: column-reverse wrap;
+        align-items: center;
+    }
+
+    .conteiner__Ifo_Banner__Uno {
+        width: 100%;
+        height: auto;
+    }
+
+    .conteiner_Image_Banner_Uno {
+        width: 95%;
+    }
+
+    /**BANNERS DOS*/
+    .conteiner__servicioDos {
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .conteiner__Banner__Dos {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    .conteiner__Ifo_Banner__Dos {
+        width: 100%;
+        height: auto;
+    }
+
+    .conteiner_Image_Banner_Dos {
+        width: 95%;
+    }
+
+    /**NUESTRA EMPRESA*/
+    .conteiner__Info__Nosotros {
+        width: 40%;
+
+    }
+
+    .conteiner__Info__Nosotros h2 {
+        font-size: 2rem;
+    }
+
+    .conteiner__Info__Nosotros p {
+        font-size: 0.8rem;
+    }
+
+    .conteiner__Nosotros {
+        background-size: 290%;
+    }
+
+    /**PRODUCTOS*/
+    .conteiner__Cards__Producto {
+        width: 40%;
+    }
+
+    /**subscripcion*/
+    .conteiner__Subscripcion h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    #subscripcionform {
+        width: 90%;
+        height: 40px;
+
+        margin: 5px 0 0 0;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+
+    .conteiner__Subscripcion form input,
+    .conteiner__Subscripcion form button {
+        width: 90%;
+        height: 50px;
+        margin-bottom: 30px;
+
+    }
+}
+
+@media (max-width: 425px) {
+
+    /**CONTACTO*/
+    .conteiner__Contacto {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .conteiner__info__contacto {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .conteiner__Contacto form {
+        width: 90%;
+    }
+
+    /**BANNERS UNO*/
+    .conteiner__servicioUno {
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .conteiner__Banner__Uno {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-flow: column-reverse wrap;
+        align-items: center;
+    }
+
+    .conteiner__Ifo_Banner__Uno {
+        width: 100%;
+        height: auto;
+    }
+
+    .conteiner_Image_Banner_Uno {
+        width: 95%;
+    }
+
+    /**BANNERS DOS*/
+    .conteiner__servicioDos {
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .conteiner__Banner__Dos {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    .conteiner__Ifo_Banner__Dos {
+        width: 100%;
+        height: auto;
+    }
+
+    .conteiner_Image_Banner_Dos {
+        width: 95%;
+    }
+
+    /*NUESTRA EMPRESA*/
+    .conteiner__Info__Nosotros {
+        width: 100%;
+        height: 600px;
+    }
+
+    /**PRODUCTOS*/
+    .conteiner__Productos h2 {
+        margin: 15px;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .conteiner__Cards__Producto {
+        width: 40%;
+    }
+
+    /**subscripcion*/
+    .conteiner__Subscripcion h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    #subscripcionform {
+        width: 90%;
+        height: 40px;
+
+        margin: 5px 0 0 0;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+
+    .conteiner__Subscripcion form input,
+    .conteiner__Subscripcion form button {
+        width: 90%;
+        height: 50px;
+        margin-bottom: 30px;
+
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    /**CONTACTO*/
+    .conteiner__info__contacto h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .conteiner__Contacto {
+        background-size: 220%;
+    }
+
+    /*NUESTRA EMPRESA*/
+    .conteiner__Info__Nosotros h2 {
+        font-size: 2rem;
+    }
+
+    .conteiner__Info__Nosotros p {
+        font-size: 0.8rem;
+    }
+
+    .conteiner__Nosotros {
+        background-size: 300%;
+    }
+
+    /**PRODUCTOS*/
+    .conteiner__Cards__Producto {
+        width: 60%;
+    }
+}
+
+@media (max-width: 320px) {
+    /**CONTACTO*/
+
+    .conteiner__Contacto {
+        background-size: 250%;
+
+    }
+
+    /**NUESTRA EMPRESA*/
+    .conteiner__Nosotros {
+        background-size: 450%;
+    }
+}
